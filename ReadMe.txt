@@ -1,7 +1,7 @@
 -----------README--------------
 
 *******************************
-This is an implentation of Deep Q learning to play OpenAI Atari SpaceInvadors-v0 game.
+This is an implentation of Deep Q learning to play OpenAI Atari SpaceInvadors game.
 Q learning algorithm is implemented using a Deep Convolutional Network with 3 Convolutional layers(no pooling)
 and a fully connected layer
 
