@@ -1,15 +1,15 @@
----------------------------------------------------README----------------------------------------------------------
+# README
 
 This is an implentation of Deep Q learning to play OpenAI Atari SpaceInvadors game.
 Q learning algorithm is implemented using a Deep Convolutional Network with 3 Convolutional layers(no pooling)
 and a fully connected layer
 
-************** Implementation Details *****************
+# Implementation Details
 Input: We take a stack of 4 frames at each time step as input state.
 action space: discrete
 state space: continuous
 
-Overview:
+# Overview:
 
 1. Preprocess input frame and build a stack of 4
 2. Create a memory for storing state,action,reward,next_state tuples
@@ -20,7 +20,7 @@ Overview:
    (2) Apply the action and update the memory with tuple <state, action, instant reward, next state>
    (3) Train the NW by sampling input from memory and output labels as target Q values(maximum possible Q values for given state). 
 
-*************** Evaluation ****************
+# Evaluation
 1) Change training = False to test the learnt model
 2) model/tensorboard graphs are saved in models/tensorboard folders
 3) After training for 100 episodes our model can achieve average score of ~200
